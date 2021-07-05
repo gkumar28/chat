@@ -1,0 +1,48 @@
+
+######################  UI Section  ###################################
+
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+UI/dist
+UI/tmp
+UI/out-tsc
+# Only exists if Bazel was run
+UI/bazel-out
+
+# dependencies
+UI/node_modules
+
+# profiling files
+UI/chrome-profiler-events*.json
+
+# IDEs and editors
+UI/.idea
+UI/.project
+UI/.classpath
+UI/.c9/
+UI/*.launch
+UI/.settings/
+UI/*.sublime-workspace
+
+# IDE - VSCode
+.vscode
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+UI/.sass-cache
+UI/connect.lock
+UI/coverage
+UI/libpeerconnection.log
+UI/npm-debug.log
+UI/yarn-error.log
+UI/testem.log
+UI/typings
+
+# System Files
+.DS_Store
+Thumbs.db
