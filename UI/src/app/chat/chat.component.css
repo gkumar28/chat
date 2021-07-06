@@ -1,6 +1,7 @@
 #chatTab {
     height: 100vh;
-    width: 100vw;
+    width: 64vw;
+    box-shadow: none;
 }
 
 .ChatContainer {
@@ -10,20 +11,26 @@
 }
 
 .ChatBox {
+    height: auto;
     width:100%;
     padding: 10px;
     flex-direction: row;
     justify-content: flex-start;
+    cursor:initial;
+    box-shadow: none;
 }
 
 .Chat {
     min-width: 75px;
-    flex-direction: row;
+    flex-flow: row nowrap;
     justify-content: space-evenly;
 }
 
 
 .ChatText {
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 1px #cccccc;
     padding: 10px;
 }
 

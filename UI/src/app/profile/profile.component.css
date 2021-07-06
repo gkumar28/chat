@@ -1,7 +1,9 @@
 #Profile-Container {
     height:100vh;
-    width:100vw;
+    width:24vw;
     padding: none;
+    margin: none;
+    box-shadow: none;
 }
 
 .Icon-Container {
@@ -15,6 +17,10 @@
 .Tab-Container {
     height:75%;
     width:100%;
+}
+
+.Tab {
+    justify-content: center;
 }
 
 .options-icon {
