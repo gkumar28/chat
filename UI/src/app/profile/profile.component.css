@@ -4,6 +4,7 @@
     padding: none;
     margin: none;
     box-shadow: none;
+    background-color: #fafafa;
 }
 
 .Icon-Container {
@@ -14,6 +15,12 @@
     justify-content: space-evenly;
 }
 
+.Icon-Container::after {
+    width: 80%;
+    border: 1px solid #d5d5d5;
+    content: "";
+}
+
 .Tab-Container {
     height:75%;
     width:100%;
@@ -21,10 +28,23 @@
 
 .Tab {
     justify-content: center;
+    margin: 0;
+    width: 100%;
+}
+
+.Tab:hover {
+    background-color: #268d61;
+    transform: scale(1.1);
+    z-index: 1;
+}
+
+.Tab:hover div {
+    color:white;
 }
 
 .options-icon {
     margin-right: 10px;
     width:5%;
     padding-top: 5%;
+    box-shadow: none;
 }

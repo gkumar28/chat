@@ -2,12 +2,36 @@
     height: 100vh;
     width: 64vw;
     box-shadow: none;
+    border-left: 1px solid #d5d5d5;
+}
+
+.header {
+    width: 100%;
+    border:none;
+    border-bottom: 1px solid #d5d5d5;
+    background-color: #fafafa;
+}
+
+.chatBack {
+    width: 6%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #d5d5d5;
+    margin-right: 20px;
+    background-color: #e9e9e9;
+    outline-style: none;
+    border: none;
+}
+
+.TabName {
+    font-size: 24px;
+    width:auto;
 }
 
 .ChatContainer {
     flex-direction: column-reverse;
     width: 100%;
-    height: 90%;
+    height: 80%;
 }
 
 .ChatBox {
@@ -18,6 +42,7 @@
     justify-content: flex-start;
     cursor:initial;
     box-shadow: none;
+    border:none;
 }
 
 .Chat {
@@ -32,12 +57,20 @@
     border-radius: 10px;
     box-shadow: 0px 0px 10px 1px #cccccc;
     padding: 10px;
+    background-color: #268d61;
+    color: white;
 }
 
 .Icon {
-    width: 30px;
-    padding-tOp: 30px;
+    width: 40px;
+    padding-tOp: 40px;
     margin-right: 10px;
+}
+
+.headericon {
+    width:50px;
+    padding-top:50px;
+    margin-right: 20px;
 }
 
 .TextBar {
@@ -45,6 +78,7 @@
     width: 100%;
     flex-direction: row;
     justify-content: center;
+    background-color:#f0f0f0;
 }
 
 textarea {
@@ -60,4 +94,9 @@ textarea {
     padding: 15px;
     font-size: 15px;
     font-family: inherit;
+    background-color:white;
+}
+
+#sendmsg {
+    background-color: #268d61;
 }

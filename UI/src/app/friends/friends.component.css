@@ -1,8 +1,14 @@
+div {
+    border-bottom:1px solid #d5d5d5;
+    background-color: #fdfdfd;
+}
+
 .Friends {
     width: 12vw;
     height:100vh;
     padding: none;
     flex-direction: column;
+    border: 1px solid #d5d5d5;
 }
 
 .header {
@@ -10,11 +16,21 @@
     height: 12%;
     cursor:initial;
     padding-left: 5%;
+    padding-bottom: 0;
     font-weight: 300;
     font-size: xx-large;
-    flex-direction: row;
+    justify-content: space-evenly;
+    border-bottom: 1px solid #d5d5d5;
+    background-color: white;
+    border: none;
 }
 
+.header::after {
+    content:"";
+    width: 80%;
+    border: 1px solid #d5d5d5;
+}
+ 
 .Tab-Container {
     width:100%;
     height: 88%;
@@ -22,8 +38,21 @@
 
 .Tab {
     height:8%;
+    width: 100%;
+    position: relative;
+    margin: 0;
     justify-content: center;
     transition: none;
+}
+
+.Tab:hover {
+    background-color: #268d61;
+    transform: scale(1.25);
+    z-index: 1;
+}
+
+.Tab:hover div {
+    color:white;
 }
 
 .TabName {
@@ -31,6 +60,8 @@
     height: auto;
     text-align: center;
     box-shadow: none; 
+    border: none;
+    background-color: inherit;
 }
 
 .showOnline {
