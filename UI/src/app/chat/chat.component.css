@@ -1,0 +1,56 @@
+#chatTab {
+    height: 100vh;
+    width: 100vw;
+}
+
+.ChatContainer {
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 90%;
+}
+
+.ChatBox {
+    width:100%;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.Chat {
+    min-width: 75px;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+
+.ChatText {
+    padding: 10px;
+}
+
+.Icon {
+    width: 30px;
+    padding-tOp: 30px;
+    margin-right: 10px;
+}
+
+.TextBar {
+    height: 10%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+textarea {
+    width: 80%;
+    height: 50px;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: #ddd;
+    resize: none;
+    margin-right: 20px;
+    padding: 15px;
+    font-size: 15px;
+    font-family: inherit;
+}
