@@ -1,0 +1,24 @@
+#Profile-Container {
+    height:100vh;
+    width:100vw;
+    padding: none;
+}
+
+.Icon-Container {
+    height:25%;
+    width:100%;
+    margin: 0;
+    padding-top: 5%;
+    justify-content: space-evenly;
+}
+
+.Tab-Container {
+    height:75%;
+    width:100%;
+}
+
+.options-icon {
+    margin-right: 10px;
+    width:5%;
+    padding-top: 5%;
+}
