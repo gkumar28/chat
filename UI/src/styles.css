@@ -1,3 +1,7 @@
+/* Fonts */
+
+/* Festive */ @import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+/* Courgette */ @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 /* You can add global styles to this file, and also import other style files */
 
 body {
@@ -5,6 +9,7 @@ body {
     margin: 0;
     font-family:Arial, Helvetica, sans-serif;
     overflow: hidden;
+    box-sizing:border-box;
 }
 
 div {
@@ -29,7 +34,7 @@ div {
 
 .Tab {
     height:10%;
-    width: 98%;
+    width: 100%;
     margin-bottom: 5px;
     border: none;
     flex-direction: row;
@@ -41,4 +46,8 @@ div {
 .TabName {
     width: 50%;
     height: 20%;
+}
+
+.Button {
+    background-color: #268d61;
 }
