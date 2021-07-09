@@ -4,17 +4,9 @@
         <div style="border:none;box-shadow:none;">Name</div>
     </div>
     <div class="Container Tab-Container">
-        <div class="Container Tab">
+        <div class="Container Tab" *ngFor="let op of options;let i=index;" (click)="chooseOption(op)">
             <div class="Icon options-icon"></div>
-            <div> asdasd</div>
+            <div>{{op}}</div>
         </div>
-        <div class="Container Tab">
-            <div class="Icon options-icon"></div>
-            <div> asdasd</div>
-        </div>
-        <div class="Container Tab">
-            <div class="Icon options-icon"></div>
-            <div> asdasd</div>
-        </div>    
     </div>
 </div>>

@@ -1,7 +1,7 @@
-#loginPage {
-    width: 100vw;
+#Dashboard {
+    width:100vw;
     height: 100vh;
-    flex-flow: row nowrap;
+    flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
 }

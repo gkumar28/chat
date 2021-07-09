@@ -3,13 +3,9 @@
         Friends
     </div>
     <div class="Container Tab-Container">
-        <div class="Container Tab">
+        <div class="Container Tab" *ngFor="let friend of friends;" (click)="chooseFriend(friend)">
             <div class="Icon showOnline"></div>
-            <div class="TabName">asdasd</div>
-        </div>
-        <div class="Container Tab">
-            <div class="Icon showOnline"></div>
-            <div class="TabName">asdasd</div>
+            <div class="TabName">{{friend}}</div>
         </div>
     </div>
 </div>
