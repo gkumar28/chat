@@ -5,15 +5,20 @@
         <div class="TabName">Name</div>
     </div>
     <div class="Container ChatContainer">
-        <div class="Container Tab ChatBox">
+        <div class="Container Tab ChatBox" *ngFor="let chat of Chats;">
             <div class="Container Chat">
                 <div class="Icon"></div>
-                <div class="ChatText"> asdas</div>
+                <div class="ChatText"> {{chat}}</div>
             </div>
         </div>
     </div>
     <div class="Container TextBar">
-        <Textarea class="Text" placeholder="Your friends are waiting..."></Textarea>
-        <div class="Icon" id="sendmsg"></div>
+        <Textarea 
+        ngDefaultControl
+        class="Text" 
+        placeholder="Your friends are waiting..." 
+        [(ngModel)]="Text">
+        </Textarea>
+        <div class="Icon" id="sendmsg" (click)="send()"></div>
     </div>
 </div>

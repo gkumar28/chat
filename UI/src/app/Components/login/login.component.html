@@ -8,17 +8,20 @@
                 <span>Name</span>
             </div>
             <div class="Container Connection">
-                <input type="text" placeholder="Username">
-                <input type="text" placeholder="Password">
+                <div *ngFor="let field of InputFields;let i=index;">
+                    <input type="text" placeholder="{{field}}" [(ngModel)]="InputVals[i]">
+                </div>
                 <div class=""></div>
             </div>
             <div class="Signup"></div>
             <div class="Container Button-Container">
-                <div class="Container Button">
-                    <span> Login </span>
+                <div class="Container Button" (click)="Submit()">
+                    <span> {{states[ind]}} </span>
                 </div>
             </div>
-            <div class="ChangeConnection">New to Name? <a>Signup!</a></div>
+            <div class="ChangeConnection">
+                {{ CurrentState() }}? <a (click)="ChangeConnection()">{{ states[xor(ind)] }}!</a>
+            </div>
         </div>
     </div>
 </div>

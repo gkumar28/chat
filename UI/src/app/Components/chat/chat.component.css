@@ -43,6 +43,7 @@
     cursor:initial;
     box-shadow: none;
     border:none;
+    overflow-y: scroll;
 }
 
 .Chat {
@@ -59,6 +60,7 @@
     padding: 10px;
     background-color: #268d61;
     color: white;
+    white-space: pre-line;
 }
 
 .Icon {
@@ -98,5 +100,6 @@ textarea {
 }
 
 #sendmsg {
+    cursor:pointer;
     background-color: #268d61;
 }

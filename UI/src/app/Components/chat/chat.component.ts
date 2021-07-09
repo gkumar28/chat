@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-chat',
@@ -7,9 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChatComponent implements OnInit {
 
+  Chats: string[] = [];
+  Text: string = "";
+
   constructor() { }
 
   ngOnInit(): void {
+    this.Chats = ['hello'];
   }
 
+  send(): void {
+    this.Chats.push(this.Text);
+    this.Text="";
+  }
+ 
 }
