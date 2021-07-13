@@ -1,0 +1,25 @@
+{
+  "name": "chat",
+  "version": "1.0.0",
+  "description": "chat application built using angular and fastify",
+  "main": "./build/server.js",
+  "scripts": {
+    "tsc": "tsc -w",
+    "dev": "nodemon build/server.js >> ./server.log",
+    "start": "node build.server.js"
+  },
+  "author": "Gaurav Kumar",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^16.3.0",
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.5"
+  },
+  "dependencies": {
+    "fastify": "^3.19.0",
+    "fastify-plugin": "^3.0.0",
+    "mongoose": "^5.13.2",
+    "uuid": "^8.3.2"
+  }
+}

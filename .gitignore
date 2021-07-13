@@ -46,3 +46,11 @@ UI/typings
 # System Files
 .DS_Store
 Thumbs.db
+
+# Server files
+Server/node_modules
+Server/build
+
+# Server Testing
+Server/test.http
+Server/server.log
