@@ -1,13 +1,18 @@
 import { fastify } from 'fastify';
-import plugin from './routes/user';
+import userPlugin from './routes/user';
+import chatPlugin from './routes/chat';
 const PORT = process.env.PORT || 8000;
 export const server = fastify({  //TODO export connection -> models -> routes
     logger: true,
 });
 
-server.register(plugin, {
+server.register(userPlugin, {
     prefix: '/api/users'
 });
+
+server.register(chatPlugin, {
+    prefix: '/api/chat'
+})
 
 async function start(): Promise<void> {
     try {

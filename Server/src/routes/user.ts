@@ -1,8 +1,6 @@
-import { mongoose, userModel } from "../connection"; 
+import { userModel } from "../connection"; 
 import FastifyPlugin from 'fastify-plugin';
 import { FastifyInstance, FastifyPluginCallback, FastifyPluginOptions, FastifyRequest, FastifyReply, FastifySchema, RequestGenericInterface } from "fastify";
-import { chatInterface } from "../Models/Chat";
-import { RouteGenericInterface } from "fastify/types/route";
 import { userInterface, userDocument } from "../Models/User";
 
 interface ReqQuery {

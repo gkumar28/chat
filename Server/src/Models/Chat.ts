@@ -2,25 +2,26 @@ import { time } from "console";
 import { Document, Schema } from "mongoose";
 
 interface chatInterface {
-    recipients: [string],
-    messages: [{
+    recipient?: [string],
+    messages?: [{
         text: string,
         sender: boolean,
         time: Date
     }]
 }
 
-interface chatDocument extends Document { }
+interface chatDocument extends Document, chatInterface { }
 
-function recipientLimit(val: number): boolean {
-    return val == 2;
+function recipientLimit(val: Array<number>): boolean {
+    return val.length == 2;
 }
 
 const chatScheme = new Schema<chatInterface>({
-    recipients: [{
-        type: String,
-        validate: [recipientLimit, "{PATH} does not match the limit of 2"]
-    }],
+    recipient: {
+        type: [String],
+        validate: [recipientLimit, '{PATH} should have length 2'],
+        required: true
+    },
     messages: [{
         text: { type: String },
         sender: { type: Boolean },
