@@ -6,7 +6,8 @@ interface userInterface {
     username: string, 
     email: string,
     password: string,
-    friends?: [string]
+    friends?: [Object],
+    active?: boolean
 }
 
 interface userDocument extends userInterface,Document { }
@@ -17,7 +18,11 @@ const userScheme = new Schema<userDocument>({
     username: {type: String, required: true, unique: true},
     email: {type: String,required: true, unique: true},
     password: {type: String,required: true},
-    friends: {type: [String]}
+    friends: { type: [{
+        type: Schema.Types.ObjectId,
+        ref: 'user'
+    }] },
+    active: { type: Boolean, default: false }
 });
 
 userScheme.virtual('fullName')
