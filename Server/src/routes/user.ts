@@ -93,11 +93,11 @@ const plugin: FastifyPluginCallback
                 }
             })
             .then((data): void => {
-                sendData(reply, 200, data);
+                sendData(reply, 201);
             })
             .catch((err: any) => { 
                 console.log(`userModel check & save error: ${err}`) 
-                sendData(reply,400);
+                sendData(reply,400,err);
             });
     });
 

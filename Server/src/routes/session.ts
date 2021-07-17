@@ -15,7 +15,7 @@ const sendData = function(reply: FastifyReply, code: number, data: any = undefin
     reply.code(code);
     reply.send(data);
 }
-
+//TODO add jwt and add DELETE request
 const plugin: FastifyPluginCallback 
 = function(fastify: FastifyInstance, options: FastifyPluginOptions,next) {
 

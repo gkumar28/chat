@@ -53,10 +53,11 @@ const plugin: FastifyPluginCallback
         (request: FastifyRequest<RequestInterface>, reply: FastifyReply) => {
             chatModel.findOne(request.query)
             .then((data) => {
+                if(data == null) throw 404;
                 sendData(reply, 200, data);
             })
             .catch((err) => {
-                sendData(reply, 404, { message: "chats not found" });
+                sendData(reply, err, { message: "chats not found" });
             });
         });   
 
