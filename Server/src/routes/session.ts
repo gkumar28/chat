@@ -44,7 +44,7 @@ const plugin: FastifyPluginCallback
             if(doc == null || doc?.password != req.body.password) throw 400;
             else sendData(reply, 200, {id: doc._id});
         })
-        .catch((code) => {
+        .catch((code: any) => {
             sendData(reply, code);
         })
     });
